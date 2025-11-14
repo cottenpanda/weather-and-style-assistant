@@ -969,7 +969,7 @@ export default function App() {
           <Button
             onClick={handleSend}
             disabled={!inputValue.trim()}
-            className="absolute right-2 top-2 h-12 w-12 rounded-full bg-[#3B82F6] hover:bg-[#3B82F6]/90 active:bg-[#3B82F6]/80 disabled:bg-[#E5E7EB] disabled:text-[#6B7280] transition-all duration-200 flex items-center justify-center"
+            className="absolute right-2 top-2 h-12 w-12 rounded-full bg-[#111111] hover:bg-[#111111]/90 active:bg-[#111111]/80 disabled:bg-[#E5E7EB] disabled:text-[#6B7280] transition-all duration-200 flex items-center justify-center"
           >
             {/* Icon: 24px (M3 standard) */}
             <Send className="w-6 h-6" />

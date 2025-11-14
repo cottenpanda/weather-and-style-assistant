@@ -11,8 +11,8 @@ export function ChatMessage({ message, isUser, timestamp }: ChatMessageProps) {
   return (
     <div className={`flex gap-3 py-3 ${isUser ? "flex-row-reverse" : "flex-row"}`}>
       {/* Avatar: 40x40px with 20x20px icon (M3 spec) */}
-      <Avatar className={`w-10 h-10 flex-shrink-0 ${isUser ? "bg-[#ffffff]" : "bg-[#E5E7EB]"}`}>
-        <AvatarFallback className={`bg-transparent ${isUser ? "text-[#3B82F6]" : "text-[#6B7280]"}`}>
+      <Avatar className={`w-10 h-10 flex-shrink-0 ${isUser ? "bg-[#111111]" : "bg-[#E5E7EB]"}`}>
+        <AvatarFallback className={`bg-transparent ${isUser ? "text-white" : "text-[#6B7280]"}`}>
           {isUser ? <User size={18} /> : <Cloud size={20} />}
         </AvatarFallback>
       </Avatar>
@@ -23,7 +23,7 @@ export function ChatMessage({ message, isUser, timestamp }: ChatMessageProps) {
         <div
           className={`rounded-2xl px-4 py-3 ${
             isUser
-              ? "bg-[#3B82F6] text-white"
+              ? "bg-[#E5E7EB] text-[#111827]"
               : "bg-[#ffffff] text-[#111827]"
           }`}
         >
